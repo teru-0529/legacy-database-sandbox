@@ -12,6 +12,7 @@ services:
       TZ: Asia/Tokyo
     tty: true
     restart: always
+    command: --ssl=0
     healthcheck:  # コンテナの起動チェック
       test: ["CMD", "healthcheck.sh", "--connect", "--innodb_initialized"]
       interval: 10s

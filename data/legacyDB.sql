@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- ホスト: db
--- 生成日時: 2025 年 1 月 18 日 08:49
+-- 生成日時: 2025 年 1 月 18 日 11:51
 -- サーバのバージョン： 11.6.2-MariaDB-ubu2404
 -- PHP のバージョン: 8.2.27
 
@@ -138,25 +138,25 @@ INSERT INTO `products` (`product_name`, `cost_price`) VALUES
 -- テーブルのインデックス `operators`
 --
 ALTER TABLE `operators`
-  ADD UNIQUE KEY `operaters_pkey` (`operator_id`);
+  ADD PRIMARY KEY (`operator_id`) USING BTREE;
 
 --
 -- テーブルのインデックス `orders`
 --
 ALTER TABLE `orders`
-  ADD UNIQUE KEY `orders_pkey` (`order_no`);
+  ADD PRIMARY KEY (`order_no`) USING BTREE;
 
 --
 -- テーブルのインデックス `order_details`
 --
 ALTER TABLE `order_details`
-  ADD UNIQUE KEY `order_details_pkey` (`order_no`,`order_detail_no`);
+  ADD PRIMARY KEY (`order_no`,`order_detail_no`) USING BTREE;
 
 --
 -- テーブルのインデックス `products`
 --
 ALTER TABLE `products`
-  ADD UNIQUE KEY `products_pkey` (`product_name`);
+  ADD PRIMARY KEY (`product_name`);
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
