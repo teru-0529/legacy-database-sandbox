@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- ホスト: db
--- 生成日時: 2025 年 1 月 25 日 09:13
+-- 生成日時: 2025 年 1 月 25 日 10:31
 -- サーバのバージョン： 11.6.2-MariaDB-ubu2404
 -- PHP のバージョン: 8.2.27
 
@@ -127,6 +127,7 @@ CREATE TABLE `products` (
 
 INSERT INTO `products` (`product_name`, `cost_price`) VALUES
 ('LAMY万年筆', 3000),
+('MONO消しゴム', -200),
 ('Mont Blanc万年筆', 90000),
 ('クルトガ', 400),
 ('ジェットストリーム', 350),
