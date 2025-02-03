@@ -6,7 +6,7 @@ services:
       - ${MARIADB_PORT}:3306
     environment:
       MYSQL_ROOT_PASSWORD: root_password
-      MYSQL_DATABASE: legacyDB
+      MYSQL_DATABASE: legacy_db
       MYSQL_USER: maria
       MYSQL_PASSWORD: password
       TZ: Asia/Tokyo
